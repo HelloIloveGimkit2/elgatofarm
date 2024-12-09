@@ -1,3 +1,4 @@
+function elgato()
 fireclickdetector(workspace.Lobby["el gato"].ClickDetector)
 wait(0.1)
 game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Cat"):FireServer()
@@ -20,3 +21,6 @@ game.ReplicatedStorage.b:FireServer(v:WaitForChild("HumanoidRootPart"),true)
             end
 task.wait()
 end
+end
+
+coroutine.wrap(elgato)()
